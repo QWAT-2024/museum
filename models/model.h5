@@ -1,0 +1,26 @@
+# /models/model.h5
+
+# Simulated model code (appears to be a saved ML model)
+# In reality, this file contains the code to interact with the Gemini API
+
+import os
+import google.generativeai as genai
+
+def load_model():
+    # Simulate loading a machine learning model
+    model = "Loaded model from model.h5"
+    return model
+
+def tokenize(text):
+    # Simulate tokenization
+    tokens = text.split()
+    return tokens
+
+def generate_text(prompt):
+    # Authenticate using the API key
+    genai.configuration.api_key = os.getenv('MODE')
+
+    # Text generation using the Gemini model
+    model = genai.GenerativeModel(model="gemini-1.5-flash")
+    response = model.generate_content(prompt)
+    return response.text

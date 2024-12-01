@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4CAF50, #2196F3);
+    height: 100vh;
+    color: white;
+}
+
+/* Chat Container */
+.chat-container {
+    display: flex;
+    width: 97%;
+    height: 95%;
+    background-color: #1e1e2f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar */
+.chat-sidebar {
+    width: 300px;
+    background: linear-gradient(135deg, #3c3c4f, #2c2c3e);
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 2px solid #1a1c30;
+    box-sizing: border-box;
+}
+
+/* Scrollbar Customization */
+.chat-sidebar::-webkit-scrollbar {
+    width: 8px;
+    height: 2px;
+}
+
+.chat-sidebar::-webkit-scrollbar-thumb {
+    background-color: #4CAF50;
+    border-radius: 4px;
+}
+
+.chat-sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #5bdb70;
+}
+
+/* Sidebar Header */
+.chat-sidebar h2 {
+    margin: 0 0 20px;
+    font-size: 18px;
+    color: white;
+}
+
+
+/* New Chat Button */
+.new-chat-button {
+    width: 100%; /* Full width for "New Chat" button */
+    padding: 10px;
+    background: linear-gradient(135deg, #4CAF50, #3c8c3f);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.new-chat-button:hover {
+    background: linear-gradient(135deg, #3c8c3f, #2e6a35);
+}
+
+/* Delete Button */
+.delete-button {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 12px; /* Slightly larger font for better visibility */
+    width: 20px; /* Compact width */
+    height: 20px; /* Compact height */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Circular button */
+    padding: 0;
+    margin-left: 10px; /* Space between session name and delete button */
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #ffcccc; /* Subtle hover effect */
+    color: darkred;
+}
+
+/* Session List */
+.session-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #3c3c4f;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.session-item:hover {
+    background-color: #4b4b61;
+}
+
+.session-item span {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 14px;
+}
+
+.chat-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background: linear-gradient(135deg, #3c8c3f, #4CAF50);
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.chat-header h1 {
+    margin: 0;
+    color: white;
+}
+
+/* Chat History */
+#chat-history {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #2c2c3e;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* Chat History Scrollbar */
+#chat-history::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-history::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 4px;
+}
+
+#chat-history::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+}
+
+.chat-message {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.chat-message.user {
+    text-align: right;
+    color: white;
+}
+
+.chat-message.bot {
+    text-align: left;
+    color: lightgreen;
+}
+
+/* Chat Input Section */
+.chat-input {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(135deg, #3c3c4f, #2c2c3e);
+}
+
+.chat-input form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.chat-input button {
+    padding: 15px;
+    background: linear-gradient(135deg, #4CAF50, #3c8c3f);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+    background: linear-gradient(135deg, #3c8c3f, #2e6a35);
+}
+
+#session-list{
+    padding: 0;
+}

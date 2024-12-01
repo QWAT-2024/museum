@@ -1,0 +1,28 @@
+# Ignore virtual environment folder
+venv/
+  
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore other Python artifacts
+*.log
+*.sqlite3
+
+# Ignore environment variables or other secrets
+.env
+# Virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+
+# Other IDE or OS-specific files
+.DS_Store
+.vscode/
